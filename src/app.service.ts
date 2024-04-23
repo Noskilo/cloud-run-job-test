@@ -8,7 +8,7 @@ export class AppService {
   async businessLogic<T>(payload: T) {
     this.logger.log(`Business logic started for ${payload}.`);
 
-    await firstValueFrom(timer(40000));
+    await firstValueFrom(timer(600000));
 
     this.logger.log(`Business logic completed for ${payload}.`);
   }
